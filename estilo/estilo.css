@@ -1,0 +1,133 @@
+@media screen and (max-width: 2048px) {
+.titulo_init {
+  text-align: center;
+  border: 2px solid;
+  border-radius: 12px;
+}
+
+hr {
+  margin-left: 70px;
+  margin-right: 70px;
+}
+.foto_perfil {
+  border-radius: 95%;
+}
+.link_parte_esq {
+  text-decoration: none;
+  color: #fff;
+}
+.bloco_direita {
+  margin-left: 10px;
+  font-weight:bold;
+}
+.bloco_esquerda {
+  margin-top: 90px;
+}
+
+.conteudo-esquerda{
+  /*pontas arredondadas bloco da direita */
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+
+  color: #fff;
+  text-align: center;
+  /*Novamente definimos a largura da div*/
+  width:25%;
+  /* altura da div */
+  height:850px;
+  float: left;
+  /* Cor de fundo da div */
+  background-color:#15385e;
+  }
+
+  /* conteudo da direita */
+  /* coloco titulo Ex.: info pessoais, experiencias e formações centralizado */
+  h2 {
+    text-align: center;
+    }
+
+.conteudo-direita{
+  /*pontas arredondadas bloco da direita */
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /*Novamente definimos a largura da div*/
+  width:75%;
+  /* altura da div */
+  height:850px;
+  float: right;
+  /* Cor de fundo da div */
+  background-color:#c0c0c0;
+  }
+  /* rodape */
+  .if_logo {
+    float: right;
+    width:auto;
+    height: 50px;  /* altura da foto para telas maiores*/
+    margin-right: 30px;
+  }
+}
+
+
+@media screen and (max-width: 720px) {
+.titulo_init {
+  text-align: center;
+  border: 2px solid;
+  border-radius: 12px;
+}
+
+hr {
+  margin-left: 70px;
+  margin-right: 70px;
+  border-color: #fff;
+}
+.foto_perfil {
+  border-radius: 95%;
+}
+.link_parte_esq {
+  text-decoration: none;
+  color: #fff;
+}
+
+.bloco_esquerda {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.conteudo-esquerda{
+  /*pontas arredondadas bloco da direita */
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+
+  width:100%; /*Novamente definimos a largura da div*/
+  height:auto;  /* altura da div */
+  background-color:#15385e; /* Cor de fundo da div */
+  }
+
+  /* conteudo da direita */
+  /* coloco titulo Ex.: info pessoais, experiencias e formações centralizado */
+  h2 {
+    text-align: center;
+    }
+
+.conteudo-direita{
+  /*pontas arredondadas bloco da direita */
+  border-radius: 10px; /*ponta do bloco aredondada*/
+  width:100%;    /*Novamente definimos a largura da div*/
+  height:auto;   /* altura da div */
+
+  /* Pode parecer meio estranho usarmos o mesmo atributo left para o bloco
+  em que queremos posicionar na direita, mas como sabemos, o CSS é um estilo
+  em cascata, nossa div conteúdo definimos a largura de 1000px e na
+  conteudo-left 500px, automaticamente ao definirmos o conteudo-right
+  com 500px e à esquerda também, ele ficou à direita do conteudo-left,
+  pois o máximo que a div filha poderá ter é 1000px, sendo 500+500=1000px */
+  /* Cor de fundo da div */
+  background-color:#c0c0c0;
+  }
+  .if_logo {
+    float: right;
+    width:auto;
+    height: 30px;   /*altura da foto*/
+    margin-right: 40px; /* move da direita pra esquerda 40px em cell*/
+  }
+}
